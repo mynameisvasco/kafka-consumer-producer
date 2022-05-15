@@ -77,7 +77,7 @@ public class TConsumer extends Thread {
                 lastData = data;
             }
 
-            consumer.commitAsync();
+
             if (exit) break;
         }
 

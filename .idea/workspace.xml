@@ -9,7 +9,7 @@
       <change afterPath="$PROJECT_DIR$/src/PA2_G23/UC5/readme.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/PA2_G23/UC6/readme.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/PA2_G23/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/as/proj2/sensor/Entities/TConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PA2_G23/Entities/TConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PA2_G23/Entities/TConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PA2_G23/Entities/TConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/as/proj2/sensor/Entities/TProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PA2_G23/Entities/TProducer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/as/proj2/sensor/Entities/TSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PA2_G23/Entities/TSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/as/proj2/sensor/Enums/UseCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PA2_G23/Enums/UseCases.java" afterDir="false" />
@@ -161,7 +161,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1652631855778</updated>
-      <workItem from="1652631856957" duration="18396000" />
+      <workItem from="1652631856957" duration="18747000" />
     </task>
     <servers />
   </component>

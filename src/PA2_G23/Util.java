@@ -116,14 +116,14 @@ public class Util {
                 properties.setProperty(ProducerConfig.REQUEST_TIMEOUT_MS_CONFIG, "60000");
                 properties.setProperty(ProducerConfig.INTERCEPTOR_CLASSES_CONFIG, "");
                 properties.setProperty(ProducerConfig.METADATA_MAX_IDLE_CONFIG, "300000");
-                properties.setProperty(ProducerConfig.BATCH_SIZE_CONFIG, "30000");
-                properties.setProperty(ProducerConfig.ACKS_CONFIG, "all");
-                properties.setProperty(ProducerConfig.LINGER_MS_CONFIG, "1000");
+                properties.setProperty(ProducerConfig.BATCH_SIZE_CONFIG, "100000");
+                properties.setProperty(ProducerConfig.ACKS_CONFIG, "1");
+                properties.setProperty(ProducerConfig.LINGER_MS_CONFIG, "10");
                 properties.setProperty(ProducerConfig.DELIVERY_TIMEOUT_MS_CONFIG, "120000");
                 properties.setProperty(ProducerConfig.MAX_REQUEST_SIZE_CONFIG, "1048576");
                 properties.setProperty(ProducerConfig.MAX_BLOCK_MS_CONFIG, "120000");
                 properties.setProperty(ProducerConfig.BUFFER_MEMORY_CONFIG, "33554432");
-                properties.setProperty(ProducerConfig.COMPRESSION_TYPE_CONFIG, "none");
+                properties.setProperty(ProducerConfig.COMPRESSION_TYPE_CONFIG, "lz4");
                 properties.setProperty(ProducerConfig.MAX_IN_FLIGHT_REQUESTS_PER_CONNECTION, "5");
                 properties.setProperty(ProducerConfig.RETRIES_CONFIG, "3");
                 properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
@@ -323,7 +323,7 @@ public class Util {
                 properties.setProperty(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringDeserializer");
                 properties.setProperty(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.ByteArrayDeserializer");
                 properties.setProperty(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
-                properties.setProperty(ConsumerConfig.FETCH_MIN_BYTES_CONFIG, "600");
+                properties.setProperty(ConsumerConfig.FETCH_MIN_BYTES_CONFIG, "100000");
                 properties.setProperty(ConsumerConfig.MAX_POLL_RECORDS_CONFIG, "20");
                 properties.setProperty(ConsumerConfig.GROUP_INSTANCE_ID_CONFIG, "null");
                 properties.setProperty(ConsumerConfig.MAX_POLL_RECORDS_CONFIG, "10000");
@@ -335,7 +335,7 @@ public class Util {
                 properties.setProperty(ConsumerConfig.AUTO_COMMIT_INTERVAL_MS_CONFIG, "2000");
                 properties.setProperty(ConsumerConfig.AUTO_OFFSET_RESET_CONFIG, "earliest");
                 properties.setProperty(ConsumerConfig.FETCH_MAX_BYTES_CONFIG, "52428800");
-                properties.setProperty(ConsumerConfig.FETCH_MAX_WAIT_MS_CONFIG, "20000");
+                properties.setProperty(ConsumerConfig.FETCH_MAX_WAIT_MS_CONFIG, "500");
                 properties.setProperty(ConsumerConfig.METADATA_MAX_AGE_CONFIG, "300000");
                 properties.setProperty(ConsumerConfig.MAX_PARTITION_FETCH_BYTES_CONFIG, "1048576");
                 properties.setProperty(ConsumerConfig.SEND_BUFFER_CONFIG, "131072");
